@@ -6,8 +6,7 @@ import sys
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from app import create_app
 
-print "************* CURRENT CONFIG MODE: ", os.getenv('YUNDONG99_APP_CONFIG_MODE')
-mode = os.getenv('YUNDONG99_APP_CONFIG_MODE') or 'default'
+mode = 'default'
 if mode:
     mode = mode.lower()
 
